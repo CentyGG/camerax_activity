@@ -121,11 +121,11 @@ public class MainActivity extends AppCompatActivity {
         }
         return imageFile;
     }
+
     private void goToSecondActivity(String imagePath) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("image_path", imagePath);
+        intent.putExtra("imageFilePath", imagePath);
         startActivity(intent);
     }
-
 
 }
